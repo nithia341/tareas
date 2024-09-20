@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;/*tamaño de la caja*/
 }
+html,
+body {
+ 
+  background-image: url("./imagenes/97.jpeg");
+  background-size: cover;  /* la imagen cubra toda la pantalla */
+  background-position: center;  /* Centra la imagen */
+  background-repeat: no-repeat;  /* Evita que la imagen se repita */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+  color :rgb(156, 7, 201);
+  font-size: 25px;/*tamaño de la letra*/
+  font-family:"Comic Sans MS", cursive, fantasy;
+  text-align:center;
+  margin: 20px 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tareas{
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.logo-contenedor{
+  width: 100%;
+  margin: 20 px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.logo {
+  width: 15vw; /* 20% del ancho de la ventana */
+  height: auto; /* Mantiene la proporción */
+  margin: 0;
+  border-radius: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.lista-principal{
+  width: 600px;
+  min-height: 400px;
+  padding: 25px;
+  margin: 10px;
+  border-radius: 26px;
+  border: 3px solid rgb(235, 189, 244);/*borde sin fondo recuerda agregar el solid*/
+  box-shadow: 0 0 15px 5px rgba(247, 122, 238, 0.6); /* Sombra rosa */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

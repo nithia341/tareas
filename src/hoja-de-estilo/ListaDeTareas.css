@@ -1,0 +1,21 @@
+.ListaDeTareas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;/*margen superios*/
+}
+.tareas-estadisticas {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .icono-completadas, .icono-incompletas {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+  }
+  
+  .icono-completadas span, .icono-incompletas span {
+    margin-left: 10px;
+  }
