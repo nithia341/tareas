@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/tareas/static/css/main.d27b1fbd.css",
+    "main.css": "/tareas/static/css/main.62898b70.css",
     "main.js": "/tareas/static/js/main.fd7316c8.js",
     "static/media/001.png": "/tareas/static/media/001.44694886b063432f8d4e.png",
     "index.html": "/tareas/index.html",
-    "main.d27b1fbd.css.map": "/tareas/static/css/main.d27b1fbd.css.map",
+    "main.62898b70.css.map": "/tareas/static/css/main.62898b70.css.map",
     "main.fd7316c8.js.map": "/tareas/static/js/main.fd7316c8.js.map"
   },
   "entrypoints": [
-    "static/css/main.d27b1fbd.css",
+    "static/css/main.62898b70.css",
     "static/js/main.fd7316c8.js"
   ]
 }
