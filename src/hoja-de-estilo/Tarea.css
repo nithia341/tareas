@@ -28,7 +28,7 @@
 /* Estilo para el contenedor cuando la tarea está completada */
 .tarea-contenedor.completada {
     background-color: rgba(246, 158, 249, 0.84); /* Aplica un color de fondo rosa translúcido cuando la tarea está completada */
-    text-decoration: line-through 2px; /* Aplica un estilo de tachado al texto, con un grosor de 2px */
+    text-decoration: line-through 1.5px; /* Aplica un estilo de tachado al texto, con un grosor de 2px */
 }
 
 /* Estilo para los iconos de las tareas */
