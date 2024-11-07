@@ -1,51 +1,60 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;/*tamaño de la caja*/
+/* Resetea los márgenes y el relleno en todos los elementos, y ajusta el modelo de caja para un manejo más predecible */
+* {
+  margin: 0; /* Elimina los márgenes predeterminados de todos los elementos */
+  padding: 0; /* Elimina los rellenos predeterminados de todos los elementos */
+  box-sizing: border-box; /* Asegura que el padding y el border se incluyan dentro de las dimensiones del elemento */
 }
+
+/* Estilo general para html y body */
 html,
 body {
- 
-  background-image: url("./imagenes/97.jpeg");
-  background-size: cover;  /* la imagen cubra toda la pantalla */
-  background-position: center;  /* Centra la imagen */
-  background-repeat: no-repeat;  /* Evita que la imagen se repita */
+  background-image: url("./imagenes/97.jpeg"); /* Aplica una imagen de fondo al body */
+  background-size: cover; /* Hace que la imagen de fondo cubra toda la pantalla */
+  background-position: center; /* Centra la imagen de fondo en la pantalla */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+}
 
+/* Estilo para los encabezados h1 */
+h1 {
+  color: rgb(156, 7, 201); /* Establece un color morado para el texto */
+  font-size: 25px; /* Establece el tamaño de la fuente en 25px */
+  font-family: "Comic Sans MS", cursive, fantasy; /* Usa la fuente Comic Sans o una cursiva/fantástica si no está disponible */
+  text-align: center; /* Centra el texto horizontalmente */
+  margin: 20px 0; /* Aplica un margen superior e inferior de 20px */
 }
-h1{
-  color :rgb(156, 7, 201);
-  font-size: 25px;/*tamaño de la letra*/
-  font-family:"Comic Sans MS", cursive, fantasy;
-  text-align:center;
-  margin: 20px 0;
+
+/* Estilo para la lista de tareas */
+.tareas {
+  display: flex; /* Utiliza el modelo de diseño Flexbox para organizar las tareas */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una sola línea */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
 }
-.tareas{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+
+/* Estilo para el contenedor del logo */
+.logo-contenedor {
+  width: 100%; /* El contenedor del logo ocupa todo el ancho disponible */
+  margin: 20px; /* Aplica un margen de 20px alrededor del contenedor */
+  display: flex; /* Utiliza Flexbox para alinear el logo */
+  align-items: center; /* Centra el logo verticalmente dentro del contenedor */
+  justify-content: center; /* Centra el logo horizontalmente dentro del contenedor */
 }
-.logo-contenedor{
-  width: 100%;
-  margin: 20 px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
+/* Estilo para el logo */
 .logo {
-  width: 15vw; /* 20% del ancho de la ventana */
-  height: auto; /* Mantiene la proporción */
-  margin: 0;
-  border-radius: 20px;
+  width: 15vw; /* Establece el ancho del logo como el 15% del ancho de la ventana */
+  height: auto; /* Mantiene la proporción de la imagen del logo */
+  margin: 0; /* Elimina los márgenes alrededor del logo */
+  border-radius: 20px; /* Aplica bordes redondeados de 20px en el logo */
 }
 
-.lista-principal{
-  width: 600px;
-  min-height: 400px;
-  padding: 25px;
-  margin: 10px;
-  border-radius: 26px;
-  border: 3px solid rgb(235, 189, 244);/*borde sin fondo recuerda agregar el solid*/
-  box-shadow: 0 0 15px 5px rgba(247, 122, 238, 0.6); /* Sombra rosa */
+/* Estilo para el contenedor principal de la lista de tareas */
+.lista-principal {
+  width: 600px; /* Establece un ancho fijo para el contenedor de la lista */
+  min-height: 400px; /* Establece una altura mínima de 400px para el contenedor */
+  padding: 25px; /* Aplica un relleno de 25px dentro del contenedor */
+  margin: 10px; /* Aplica un margen de 10px alrededor del contenedor */
+  border-radius: 26px; /* Redondea los bordes del contenedor con un radio de 26px */
+  border: 3px solid rgb(235, 189, 244); /* Establece un borde rosa claro de 3px alrededor del contenedor */
+  box-shadow: 0 0 15px 5px rgba(247, 122, 238, 0.6); /* Aplica una sombra suave de color rosa alrededor del contenedor */
 }
-

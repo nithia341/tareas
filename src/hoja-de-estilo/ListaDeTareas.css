@@ -1,21 +1,22 @@
-.ListaDeTareas{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 15px;/*margen superios*/
+.ListaDeTareas {
+  display: flex; /* Utiliza el modelo de diseño Flexbox para los elementos dentro de la lista de tareas */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una sola línea */
+  justify-content: center; /* Centra los elementos horizontalmente dentro de la lista de tareas */
+  margin-top: 15px; /* Aplica un margen superior de 15px entre la lista y el contenido superior */
 }
+
 .tareas-estadisticas {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  
-  .icono-completadas, .icono-incompletas {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-  }
-  
-  .icono-completadas span, .icono-incompletas span {
-    margin-left: 10px;
-  }
+  display: flex; /* Utiliza el modelo de diseño Flexbox para las estadísticas de tareas */
+  justify-content: space-between; /* Distribuye los elementos de las estadísticas con el mayor espacio posible entre ellos */
+  margin-top: 20px; /* Aplica un margen superior de 20px entre las estadísticas y el contenido superior */
+}
+
+.icono-completadas, .icono-incompletas {
+  display: flex; /* Utiliza Flexbox para alinear el icono y el texto */
+  align-items: center; /* Alinea verticalmente los elementos dentro del contenedor */
+  font-size: 18px; /* Establece el tamaño de la fuente a 18px */
+}
+
+.icono-completadas span, .icono-incompletas span {
+  margin-left: 10px; /* Aplica un margen a la izquierda del texto para separarlo del icono */
+}

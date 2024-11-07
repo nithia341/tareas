@@ -1,13 +1,42 @@
+/* Estilos generales */
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+ 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Estilos básicos para el contenido */
+.container {
+  width: 90%; /* Utiliza el 90% del ancho en pantallas pequeñas */
+  max-width: 1200px; /* Máximo ancho de 1200px en pantallas grandes */
+  padding: 20px;
+
+  
+}
+
+/* Medios Queries para pantallas pequeñas */
+@media (max-width: 600px) {
+  .container {
+    width: 100%; /* En pantallas pequeñas, ocupa el 100% */
+    padding: 10px;
+  }
+
+  body {
+    font-size: 14px; /* Ajusta el tamaño de la fuente */
+  }
+}
+
+/* Medios Queries para pantallas grandes */
+@media (min-width: 1200px) {
+  body {
+    font-size: 18px; /* Aumenta el tamaño de la fuente para pantallas grandes */
+  }
 }

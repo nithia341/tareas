@@ -1,31 +1,35 @@
-.formulario{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+.formulario {
+    display: flex; /* Utiliza el modelo de diseño Flexbox para el formulario */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una sola línea */
+    align-items: center; /* Centra los elementos de forma vertical dentro del formulario */
+    justify-content: center; /* Centra los elementos de forma horizontal dentro del formulario */
 }
-/*campo de texto*/
-.tarea-input{
-    width: 350px;
-    font-size: 18px;
-    padding: 14px 32px 14px 16px ;
-    border-radius: 4px 0 0 4px;
-    border: 3px solid rgb(235, 189, 244);/*borde sin fondo recuerda agregar el solid*/
-    box-shadow: 0 0 5px 2px rgba(235, 171, 231, 0.6); /* Sombra rosa */
-    cursor: text;
-    outline: none;/*no tener doble borde*/
+
+/* Estilo para el campo de texto */
+.tarea-input {
+    width: 350px; /* Define el ancho del campo de texto */
+    font-size: 18px; /* Establece el tamaño de la fuente */
+    padding: 14px 32px 14px 16px; /* Define el espacio interno (padding) en los 4 lados del campo */
+    border-radius: 4px 0 0 4px; /* Aplica bordes redondeados solo en la parte izquierda del campo */
+    border: 3px solid rgb(235, 189, 244); /* Define un borde rosa claro sin fondo */
+    box-shadow: 0 0 5px 2px rgba(235, 171, 231, 0.6); /* Aplica una sombra rosa clara alrededor del campo */
+    cursor: text; /* Cambia el cursor a un texto cuando el usuario pasa el ratón por encima */
+    outline: none; /* Elimina el borde de enfoque (outline) cuando el campo está seleccionado */
+    border-radius: 15px 0 0 15px; /* Redondea más los bordes en la parte izquierda del campo */
 }
-/*boton para agregar tareas*/
-.tarea-boton{
-    padding: 16px;
-    font-size: 18px;
-    font-family: Roboto, sans-serif;
-    border: none;
-    border-radius:  7px 7px 7px 7px;
-    cursor: pointer;
-    outline: none;
-    background-color: rgb(251, 190, 246);
-    border: 1px solid rgb(235, 189, 244);/*borde sin fondo recuerda agregar el solid*/
-    box-shadow: 0 0 10px 4px rgba(226, 122, 247, 0.6); /* Sombra rosa */
-    text-transform: capitalize;/*mayusculas la primera de cada palabra*/
+
+/* Estilo para el botón de agregar tarea */
+.tarea-boton {
+    padding: 16px; /* Aplica un espacio interno uniforme de 16px alrededor del texto del botón */
+    font-size: 18px; /* Define el tamaño de la fuente del texto del botón */
+    font-family: Roboto, sans-serif; /* Define la fuente utilizada en el botón */
+    border: none; /* Elimina el borde predeterminado del botón */
+    border-radius: 7px 7px 7px 7px; /* Redondea todos los bordes del botón */
+    cursor: pointer; /* Cambia el cursor a mano cuando se pasa sobre el botón */
+    outline: none; /* Elimina el borde de enfoque (outline) cuando el botón está seleccionado */
+    background-color: rgb(251, 190, 246); /* Establece un color de fondo rosa claro para el botón */
+    border: 1px solid rgb(235, 189, 244); /* Define un borde rosa claro alrededor del botón */
+    box-shadow: 0 0 10px 4px rgba(226, 122, 247, 0.6); /* Aplica una sombra rosa alrededor del botón */
+    text-transform: capitalize; /* Convierte la primera letra de cada palabra en mayúscula */
 }
+

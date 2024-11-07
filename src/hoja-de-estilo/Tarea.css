@@ -1,41 +1,48 @@
-.tarea-contenedor{
-    width: 550px;
-    min-height: 65px;/*para que se expanda de la altura*/
-    margin: 5px 0;
-    padding: 8px 15px 8px 20px;
-    display: flex;
-    justify-content: space-between;/*para que los elementos se distribullan */
-    align-items: center;/*alinienrlos al centro verticalmente */
-    border-radius: 10px;
-    border: 3px solid rgb(235, 189, 244);/*borde sin fondo recuerda agregar el solid*/
-    box-shadow: 0 0 5px 2px rgba(235, 171, 231, 0.6); /* Sombra rosa */
-    cursor: pointer;
+.tarea-contenedor {
+    width: 550px; /* Establece el ancho del contenedor de la tarea */
+    min-height: 65px; /* Define una altura mínima para el contenedor, garantizando que siempre tenga al menos 65px de altura */
+    margin: 5px 0; /* Aplica un margen de 5px en la parte superior e inferior del contenedor */
+    padding: 8px 15px 8px 20px; /* Aplica relleno en los 4 lados del contenedor */
+    display: flex; /* Utiliza el modelo de diseño Flexbox para alinear los elementos dentro del contenedor */
+    justify-content: space-between; /* Distribuye los elementos dentro del contenedor con el mayor espacio posible entre ellos */
+    align-items: center; /* Alinea verticalmente los elementos al centro dentro del contenedor */
+    border-radius: 20px; /* Aplica bordes redondeados con un radio de 20px */
+    border: 3px solid rgb(235, 189, 244); /* Aplica un borde sólido de 3px de color rosa claro alrededor del contenedor */
+    box-shadow: 0 0 5px 2px rgba(235, 171, 231, 0.6); /* Aplica una sombra rosa suave alrededor del contenedor */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar que el contenedor es interactivo */
 }
-.tarea-texto{
-    width: 100%;
-    height: 100%;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    overflow-wrap:anywhere ;/*corta el texto y lo agrega abajo */
-    color: rgb(135, 4, 117);
-    font-size: 14px;/*tamaño de la letra*/
-    font-family:"Comic Sans MS", cursive, fantasy;
-}
-.tarea-contenedor.completada{
-    background-color: rgba(246, 158, 249, 0.84);
-    text-decoration:line-through 2px ; /*texto tachado */
-}
-.tareas-iconos{
-    width: 10px;
-    height: 20px;
-    margin: 15px;
-    font-size: 25px;
 
+/* Estilo para el texto dentro del contenedor de la tarea */
+.tarea-texto {
+    width: 100%; /* El texto ocupará todo el ancho disponible del contenedor */
+    height: 100%; /* El texto ocupará toda la altura disponible del contenedor */
+    font-size: 20px; /* Define el tamaño de la fuente en 20px */
+    display: flex; /* Utiliza Flexbox para alinear el texto */
+    align-items: center; /* Alinea el texto verticalmente en el centro */
+    overflow-wrap: anywhere; /* Permite que el texto se rompa en cualquier punto para ajustarse al contenedor */
+    color: rgb(135, 4, 117); /* Establece el color del texto a un tono morado oscuro */
+    font-size: 14px; /* Define el tamaño de la fuente a 14px (puede sobrescribir el tamaño anterior de 20px) */
+    font-family: "Comic Sans MS", cursive, fantasy; /* Define la familia de la fuente como Comic Sans, una fuente cursiva o una fuente de fantasía */
 }
-.tarea-icono{
-    width: 20px;
-    height: 20px;
-    margin: 5px;
-    cursor: pointer;
+
+/* Estilo para el contenedor cuando la tarea está completada */
+.tarea-contenedor.completada {
+    background-color: rgba(246, 158, 249, 0.84); /* Aplica un color de fondo rosa translúcido cuando la tarea está completada */
+    text-decoration: line-through 2px; /* Aplica un estilo de tachado al texto, con un grosor de 2px */
+}
+
+/* Estilo para los iconos de las tareas */
+.tareas-iconos {
+    width: 10px; /* Establece un ancho de 10px para los iconos */
+    height: 20px; /* Establece una altura de 20px para los iconos */
+    margin: 15px; /* Aplica un margen de 15px alrededor de los iconos */
+    font-size: 25px; /* Define el tamaño de la fuente para los iconos en 25px */
+}
+
+/* Estilo para los iconos dentro del contenedor de la tarea */
+.tarea-icono {
+    width: 20px; /* Establece un ancho de 20px para los iconos */
+    height: 20px; /* Establece una altura de 20px para los iconos */
+    margin: 5px; /* Aplica un margen de 5px alrededor de los iconos */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar que los iconos son interactivos */
 }
