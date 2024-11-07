@@ -73,7 +73,7 @@ function ListaDeTareas() {
 
             <div className="tareas-estadisticas">
                 <div className="icono-completadas" onClick={toggleMostrarCompletadas} style={{ cursor: "pointer" }}>
-                    <LiaCheckDoubleSolid style={{ color: "#3989FF" }} />
+                    <LiaCheckDoubleSolid style={{ color: "#00BCD4" }} />
                     <span>{tareasCompletadas} completadas</span>
                 </div>
                 <div className="icono-todas" onClick={mostrarTodasLasTareas} style={{ cursor: "pointer" }}>

@@ -1,5 +1,5 @@
 .tarea-contenedor {
-    width: 550px; /* Establece el ancho del contenedor de la tarea */
+    width: 500px; /* Establece el ancho del contenedor de la tarea */
     min-height: 65px; /* Define una altura mínima para el contenedor, garantizando que siempre tenga al menos 65px de altura */
     margin: 5px 0; /* Aplica un margen de 5px en la parte superior e inferior del contenedor */
     padding: 8px 15px 8px 20px; /* Aplica relleno en los 4 lados del contenedor */
