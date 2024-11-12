@@ -58,3 +58,18 @@ h1 {
   border: 3px solid rgb(235, 189, 244); /* Establece un borde rosa claro de 3px alrededor del contenedor */
   box-shadow: 0 0 15px 5px rgba(247, 122, 238, 0.6); /* Aplica una sombra suave de color rosa alrededor del contenedor */
 }
+/* Medios Queries para pantallas pequeñas */
+@media (max-width: 480px) {
+  header{
+    padding: 10px;
+    font-size: 16px;
+  }
+  .container {
+    width: 95%; /* En pantallas pequeñas, ocupa el 100% */
+   
+  }
+
+  body {
+    font-size: 14px; /* Ajusta el tamaño de la fuente */
+  }
+}
