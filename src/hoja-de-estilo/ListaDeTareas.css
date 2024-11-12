@@ -1,22 +1,69 @@
+/* Estilo para la lista de tareas */
 .ListaDeTareas {
-  display: flex; /* Utiliza el modelo de diseño Flexbox para los elementos dentro de la lista de tareas */
+  display: flex; /* Utiliza el modelo de diseño Flexbox para los elementos dentro de la lista */
   flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una sola línea */
-  justify-content: center; /* Centra los elementos horizontalmente dentro de la lista de tareas */
-  margin-top: 15px; /* Aplica un margen superior de 15px entre la lista y el contenido superior */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  margin-top: 15px;
 }
 
+/* Estilo para las estadísticas de tareas */
 .tareas-estadisticas {
-  display: flex; /* Utiliza el modelo de diseño Flexbox para las estadísticas de tareas */
-  justify-content: space-between; /* Distribuye los elementos de las estadísticas con el mayor espacio posible entre ellos */
-  margin-top: 20px; /* Aplica un margen superior de 20px entre las estadísticas y el contenido superior */
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos con el mayor espacio posible entre ellos */
+  margin-top: 20px;
 }
 
-.icono-completadas, .icono-incompletas ,.icono-todas{
-  display: flex; /* Utiliza Flexbox para alinear el icono y el texto */
-  align-items: center; /* Alinea verticalmente los elementos dentro del contenedor */
-  font-size: 18px; /* Establece el tamaño de la fuente a 18px */
+/* Estilo para los iconos y el texto en las estadísticas */
+.icono-completadas, .icono-incompletas, .icono-todas {
+  display: flex;
+  align-items: center;
+  font-size: 18px; /* Tamaño de fuente */
 }
 
 .icono-completadas span, .icono-incompletas span {
-  margin-left: 10px; /* Aplica un margen a la izquierda del texto para separarlo del icono */
+  margin-left: 10px; /* Separación entre el icono y el texto */
+}
+
+/* Media query para pantallas pequeñas (tabletas y teléfonos) */
+@media (max-width: 768px) {
+  /* Modificar la distribución de la lista de tareas */
+  .ListaDeTareas {
+    justify-content: flex-start; /* Alineamos los elementos al inicio en lugar de centrarlos */
+  }
+
+  /* Ajustar las estadísticas para pantallas pequeñas */
+  .tareas-estadisticas {
+    flex-direction: column; /* Apilar los elementos de las estadísticas verticalmente */
+    align-items: center; /* Centrar los elementos verticalmente */
+    margin-top: 15px; /* Reducir el margen superior para pantallas pequeñas */
+  }
+
+  /* Reducir el tamaño de los iconos y el texto */
+  .icono-completadas, .icono-incompletas, .icono-todas {
+    font-size: 16px; /* Reducir el tamaño de los iconos */
+  }
+
+  .icono-completadas span, .icono-incompletas span {
+    margin-left: 8px; /* Reducir el margen entre el icono y el texto */
+  }
+}
+
+/* Media query para pantallas muy pequeñas (teléfonos móviles) */
+@media (max-width: 480px) {
+  .ListaDeTareas {
+    justify-content: center; /* Volver a centrar los elementos en pantallas muy pequeñas */
+  }
+
+  .tareas-estadisticas {
+    margin-top: 10px; /* Reducir el margen superior */
+  }
+
+  /* Ajustes adicionales para los iconos y el texto */
+  .icono-completadas, .icono-incompletas, .icono-todas {
+    font-size: 14px; /* Reducir aún más el tamaño de los iconos */
+  }
+
+  .icono-completadas span, .icono-incompletas span {
+    margin-left: 6px; /* Reducir el margen entre el icono y el texto */
+  }
 }
